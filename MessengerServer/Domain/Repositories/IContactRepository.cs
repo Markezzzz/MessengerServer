@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MessengerServer.Data.Models;
+using MessengerServer.Domain.Models;
 
 namespace MessengerServer.Domain.Repositories
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MessengerServer.Data.Models;
+using MessengerServer.Domain.Models;
 using MessengerServer.Domain.Repositories;
 
 namespace MessengerServer.Data.Repositories

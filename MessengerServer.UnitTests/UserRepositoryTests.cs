@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using AutoFixture;
 using FluentAssertions;
-using MessengerServer.Data.Models;
 using MessengerServer.Data.Repositories;
+using MessengerServer.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 

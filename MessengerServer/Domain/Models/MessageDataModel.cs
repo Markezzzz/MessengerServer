@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MessengerServer.Data.Models
+namespace MessengerServer.Domain.Models
 {
     public class MessageDataModel
     {

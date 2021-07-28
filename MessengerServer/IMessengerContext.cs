@@ -1,4 +1,4 @@
-﻿using MessengerServer.Data.Models;
+﻿using MessengerServer.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace MessengerServer
