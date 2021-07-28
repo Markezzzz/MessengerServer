@@ -6,7 +6,6 @@ using FluentAssertions;
 using MessengerServer.Data.Models;
 using MessengerServer.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
-using NSubstitute;
 using Xunit;
 
 namespace MessengerServer.UnitTests
@@ -95,7 +94,7 @@ namespace MessengerServer.UnitTests
                 u.Name == updatedUser.Name &&
                 u.Password == updatedUser.Password);
         }
-        
+
         [Fact]
         public void UpdateUser_ShouldFail_WhenUserDoesNotExist()
         {
@@ -121,7 +120,7 @@ namespace MessengerServer.UnitTests
                 u.Password == user.Password &&
                 u.State == UserState.Online);
         }
-        
+
         [Fact]
         public void UpdateUserState_ShouldFail_WhenUserDoesNotExist()
         {

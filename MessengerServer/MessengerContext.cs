@@ -1,5 +1,4 @@
-﻿using System;
-using MessengerServer.Data.Models;
+﻿using MessengerServer.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace MessengerServer

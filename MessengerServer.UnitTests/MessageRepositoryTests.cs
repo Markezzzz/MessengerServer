@@ -78,7 +78,7 @@ namespace MessengerServer.UnitTests
 
             result.Should().HaveCount(3);
         }
-        
+
         [Fact]
         public void GetUserMessages_ShouldBeEmpty_WhenNoValidMessagesExist()
         {
@@ -99,7 +99,7 @@ namespace MessengerServer.UnitTests
 
             result.Should().BeEmpty();
         }
-        
+
         [Fact]
         public void SearchUserMessages_ShouldReturnMessages_WhenValidMessagesExist()
         {
@@ -109,23 +109,23 @@ namespace MessengerServer.UnitTests
             {
                 _fixture.Build<MessageDataModel>()
                     .With(m => m.UserId, userId)
-                    .With(m=>m.ContactId, contactId)
-                    .With(m=>m.Content, "I Love Cats")
+                    .With(m => m.ContactId, contactId)
+                    .With(m => m.Content, "I Love Cats")
                     .Create(),
                 _fixture.Build<MessageDataModel>()
                     .With(m => m.UserId, userId)
-                    .With(m=>m.ContactId, contactId)
-                    .With(m=>m.Content, "I Love Dogs")
+                    .With(m => m.ContactId, contactId)
+                    .With(m => m.Content, "I Love Dogs")
                     .Create(),
                 _fixture.Build<MessageDataModel>()
                     .With(m => m.UserId, userId)
-                    .With(m=>m.ContactId, contactId)
-                    .With(m=>m.Content, "I Love Animals")
+                    .With(m => m.ContactId, contactId)
+                    .With(m => m.Content, "I Love Animals")
                     .Create(),
                 _fixture.Build<MessageDataModel>()
                     .With(m => m.UserId, userId)
-                    .With(m=>m.ContactId, contactId)
-                    .With(m=>m.Content, "I Love Everything")
+                    .With(m => m.ContactId, contactId)
+                    .With(m => m.Content, "I Love Everything")
                     .Create(),
                 _fixture.Create<MessageDataModel>(),
                 _fixture.Create<MessageDataModel>()

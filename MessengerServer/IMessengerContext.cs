@@ -8,7 +8,7 @@ namespace MessengerServer
         DbSet<UserDataModel> UserDataModels { get; set; }
         DbSet<ContactDataModel> ContactDataModels { get; set; }
         DbSet<MessageDataModel> MessageDataModels { get; set; }
-        
+
         int SaveChanges();
     }
 }

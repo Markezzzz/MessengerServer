@@ -12,9 +12,6 @@ namespace MessengerServer
                 .UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=messengerserverdb;Trusted_Connection=True;")
                 .Options;
             var context = new MessengerContext(options);
-            var messageRepository = new MessageRepository(context);
-            var userRepository = new UserRepository(context);
-            var contactRepository = new ContactRepository(context, userRepository);
         }
     }
 }

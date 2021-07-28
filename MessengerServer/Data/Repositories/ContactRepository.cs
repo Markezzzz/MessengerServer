@@ -61,7 +61,8 @@ namespace MessengerServer.Data.Repositories
             var contact = _context.ContactDataModels.FirstOrDefault(c =>
                 c.UserId == userId &&
                 c.ContactId == contactId);
-            if (contact is null) throw new ArgumentException("Contact is not found");;
+            if (contact is null) throw new ArgumentException("Contact is not found");
+
             _context.ContactDataModels.Remove(contact);
             _context.SaveChanges();
         }
